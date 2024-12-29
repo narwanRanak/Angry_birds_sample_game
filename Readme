@@ -1,0 +1,120 @@
+# # Angry Birds Game Application
+
+Welcome to the **Angry Birds Game Application**, a Java-based game built using **LibGDX**. This project demonstrates physics-based gameplay mechanics and showcases the integration of multiple game screens. It uses **OOP principles** and **design patterns** for better maintainability.
+
+## Table of Contents
+
+1.  [About the Game](#about-the-game)
+2.  [Features](#features)
+3.  [Navigation](#navigation)
+4.  [Setup Instructions](#setup-instructions)
+5.  [Assumptions](#assumptions)
+6.  [Known Issues](#known-issues)
+7.  [Future Enhancements](#future-enhancements)
+
+## About the Game
+
+The game is inspired by the popular **Angry Birds** franchise. Players will launch birds from a catapult to hit targets. It features:
+
+-   A Home Page with navigation options.
+-   Levels that progressively increase in difficulty.
+-   Dynamic screens for game states like winning, losing, or transitioning between levels.
+
+----------
+
+## Features
+
+-   **Interactive UI:** Buttons and images enable smooth navigation.
+-   **Background Images:** Enhanced visual appeal with custom textures.
+-   **Physics-based Gameplay:** Realistic projectile motion mechanics.
+-   **Screen Transitions:** Move seamlessly between levels and other screens.
+
+----------
+
+## Navigation
+
+### Home Page
+
+-   **Play Button:** Starts the game and navigates to the level selection screen.
+-   Background and button sizes adjust to screen dimensions dynamically.
+
+### Levels
+
+-   Choose levels and start the game with varying obstacles and challenges.
+-   Transition between levels based on success or failure.
+
+### Other Screens
+
+-   **Win Screen:** Displayed when a level is completed successfully.
+-   **Lose Screen:** Displayed upon failing a level.
+
+----------
+
+## Setup Instructions
+
+1.  **Prerequisites:**
+
+    -   Install **JDK 22** or a compatible version.
+    -   Install **Gradle** for project building.
+    -   Ensure **LibGDX setup** is complete.
+2.  **Clone the Repository:**
+
+    bash
+
+    Copy code
+
+    `git clone <repository_url>`
+
+3.  **Run the Game:**
+
+    -   Use Gradle to build and run the application:
+
+        bash
+
+        Copy code
+
+        `./gradlew lwjgl3:run`
+
+4.  **Assets:**
+
+    -   Place all assets (e.g., `MainScreen.png`, `play.png`, `uiskin.json`) in their respective folders as specified in the code.
+
+----------
+
+## Assumptions
+
+1.  **Assets Availability:**
+    -   The following assets are assumed to be in the correct directories:
+        -   `MainScreen.png`: Home screen background.
+        -   `play.png`: Image for the play button.
+        -   `uiskin.json`: Skin file for UI elements.
+2.  **Fixed Window Size:**
+    -   The application is optimized for a window size of **800x600** pixels.
+3.  **Simple Navigation:**
+    -   The player can only navigate via buttons; there are no keyboard shortcuts.
+4.  **No Persistent State:**
+    -   Game progress is not saved between sessions.
+5.  **Limited Error Handling:**
+    -   Assumes all required files are present and properly configured.
+
+----------
+
+## Known Issues
+
+1.  **Scaling Issues:**
+    -   Images may not scale well on non-standard screen resolutions.
+
+----------
+
+## Future Enhancements
+
+1.  **Sound Effects and Music:**
+    -   Add soundtracks and in-game effects to enhance user experience.
+2.  **Level Editor:**
+    -   Enable players to design and save custom levels.
+3.  **Game Save System:**
+    -   Allow players to save progress and resume later.
+
+----------
+
+Enjoy playing the game and feel free to contribute to its development!
